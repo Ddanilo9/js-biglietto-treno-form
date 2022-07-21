@@ -1,26 +1,32 @@
 //dichiarazione variabili
-let nome 
+let nome = document.getElementById('nome')
 let chilometri
+let eta
 let prezzoFinale
+let scontoMinorenne = (0.21 / 100 * 20);
+let scontoOver65 = (0.21 / 100 * 40);
 
 
 
 
 
 
-//selezione il bottone invia nel dom
 let inviaButton = document.querySelector('input[type="submit"]'); 
-//provo a vedere se il bottone con la funzione mi da l'output nella console
+
 inviaButton.addEventListener('click', function ()  { 
-    let inputNome = document.querySelector('input[name="nome"]');
-    let nome = inputNome.value; 
-    console.log(nome);
+    let nome = document.getElementById('nome').value;
+        console.log('nome passeggero', nome);
+    
+    let eta = document.getElementById('age').value;
+    let etaPasseggero = parseInt(eta);
+        console.log('età passeggero', eta);
 
-    let inputchilometri= document.querySelector('input[name="km"]');
-    let chilometri = inputchilometri.value; 
-    console.log(chilometri * 0.21);
+    let chilometri= document.getElementById('chilometri').value;
+        console.log('prezzo', chilometri * 0.21);
 
-
+        if () {
+            
+        }
 })
 
 
