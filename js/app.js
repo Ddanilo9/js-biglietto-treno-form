@@ -18,22 +18,27 @@ inviaButton.addEventListener('click', function ()  {
   console.log(nomePasseggero)
 
   chilometri = document.querySelector('input[name="km"]')
-  let prezzo = (chilometri.value)
-  console.log(prezzo)
+  let chilometriFatti = (chilometri.value)
+  console.log(chilometriFatti)
 
   eta = document.getElementById('age').value;
   console.log(eta);
-
+  
+  chilometriFatti = parseInt(chilometriFatti);
+  if(isNaN (chilometriFatti))    {
+     alert("Scrivi i kilometri in cifre");
+  }
+   
   if(eta === "Under 18") {
-    prezzo = prezzo * 0.21 - (prezzo * scontoMinorenne) 
+    prezzo = chilometriFatti * 0.21 - (chilometriFatti * scontoMinorenne) 
     console.log(prezzo) 
 }
   if(eta === "Over 65") {
-        prezzo = prezzo * 0.21 - (prezzo * scontoOver65) 
+        prezzo = chilometriFatti * 0.21 - (chilometriFatti * scontoOver65) 
         console.log(prezzo) 
 }
   if(eta === "Tra 18 e 65") {
-    prezzo = prezzo * 0.21 
+    prezzo = chilometriFatti * 0.21 
     console.log(prezzo) 
 }
 

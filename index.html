@@ -10,31 +10,62 @@
 <body>
 
     <main>
-        <div class="">
-            <h2>nome</h2>
-            <input type="text" id="nome" name="nome" placeholder="inserisci nome">
+        
+        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Nome e Cognome</h2>
+                    <input class="form-input" type="text" id="nome" name="nome" placeholder="inserisci nome">
+                </div>
+                <div class="col">
+                    <h2>Km da percorrere</h2>
+                    <input class="form-input" type="text" id="chilometri" name="km" placeholder="inserisci chilometri">
+                </div>
+                <div class="col">
+                    <h2>Fascia d'età</h2>
+                    <select name="age" id="age">
+                        <option value="Under 18"> Minorenne</option>
+                        <option value="Tra 18 e 65">Maggiorenne</option>
+                        <option value="Over 65"> Over 65</option>
+                    </select>
+                </div>
+            </div>
+             <div class="box-buttons">
+                <input class="btn" type="submit" value="Genera">
+                <input class="btn" type="button" value="annulla">
+            </div>
         </div>
-        <div class="">
-            <h2>chilometri</h2>
-            <input type="text" id="chilometri" name="km" placeholder="inserisci chilometri">
+        <h1 class="title">Il tuo biglietto</h1>
+        <div class="container-2 m-t">
+            <div class="row">
+                <div class="col-30">
+                    <h3>NOME PASSEGGERO</h3>
+                </div>
+                <div class="col-4">
+                    <h3>Offerta</h3>
+                </div>
+                <div class="col-4">
+                    <h3>Codice carrozza</h3>
+                </div>
+                <div class="col-4">
+                    <h3>Codice Cp</h3>
+                </div>
+                <div class="col-4">
+                    <h3>Costo biglietto</h3>
+                    <div id="pf"></div>
+                </div>
+            </div>
+           
         </div>
-        <div class="">
-            <h2>fascia età</h2>
-            <select name="age" id="age">
-                <option value="Under 18"> Minorenne</option>
-                <option value="Tra 18 e 65">Maggiorenne</option>
-                <option value="Over 65"> Over 65</option>
-            </select>
-        </div><br>
-    
-        <div class="">
-            <input type="submit" value="vai">
-        </div>
-        <div id="pf">ecco il tuo prezzo</div>
+
+       
+        
+        
     </main>
 
     <script src="js/app.js">
         
     </script>
 </body>
-</html>
+</html>-
